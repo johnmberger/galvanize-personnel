@@ -3,8 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Galvanize Personnel</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/styles/main.css">
     </head>
     <body>
-        
+      <div class="container">
+        <h1>Galvanize Personnel</h1>
+        <hr>
+        <form method="post">
+          <fieldset class="form-group">
+            <label for="fName">First Name</label>
+            <input class="form-control" type="text" name="fName" id="fName" placeholder="First Name" required>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="lName">Last Name</label>
+            <input class="form-control" type="text" name="lName" id="lName" placeholder="Last Name" required>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="role">Role</label>
+            <select class="form-control" name="role" id="role" placeholder="- Select an Option Here -">
+              <option id="placeholderValue" value="">- Select an Option Below -</option>
+            </select>
+          </fieldset>
+          <img id="roleImage" src="" class="center-block"/>
+          <div id="status">
+            <p class="save-status"></p>
+          </div>
+          <input class="btn btn-primary btn-block" type="submit" name="submit" value="Save">
+        </form>
+      </div>
+      <!-- js -->
+      <script type="text/javascript" src="./assets/scripts/app.js"></script>
     </body>
 </html>
